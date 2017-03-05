@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    function sendToLocalStorage() {
+        var questionary = [
+            {
+                question: "Quod licet Jovi, non licet bovi",
+                answers: [
+                    "Ювеналий мне друг, но истина дороже",
+                    "Что позволено Юпитеру, не позволено быку",
+                    "Слышал голос Иова, да не знал откуда",
+                ],
+                correct_answer: "2"
+            },
+            {
+                question: "Conditio sine qua non",
+                answers: [
+                    "Сохранился до сих пор",
+                    "Кондитер от Бога (досл. которого не было (ранее))",
+                    "Непременное условие",
+                ],
+                correct_answer: "3"
+            },
+            {
+                question: "Satur venter non studet libenter",
+                answers: [
+                    "Сытое брюхо к ученью глухо",
+                    "Для изобретений недостаточно только свободы обучения",
+                    "Сатурн не открывает своих тайн неучам",
+                ],
+                correct_answer: "1"
+            },
+            {
+                question: "Amicus Plato, sed magis amica est veritas!",
+                answers: [
+                    "Высоко плато Амикус, но вершина истины — выше!",
+                    "Приятно ходить по равнине, но горы истины зовут!",
+                    "Платон мне друг, но истина дороже",
+                ],
+                correct_answer: "3"
+            },
+            {
+                question: "DIXI",
+                answers: [
+                    "C Богом!",
+                    "Я все сказал (добавить нечего).",
+                    "611",
+                ],
+                correct_answer: "2"
+            },
+            {
+                question: "Festina lente!",
+                answers: [
+                    "Спеши медленно!",
+                    "Не ленись!",
+                    "Фестиваль лент!",
+                ],
+                correct_answer: "1"
+            },
+            {
+                question: "Vale!",
+                answers: [
+                    "Валентине!",
+                    "Будь здоров!",
+                    "Значительно!",
+                ],
+                correct_answer: "2"
+            },
+            {
+                question: "Veni, Vidi, Vici",
+                answers: [
+                    "Быстрее, выше, сильнее",
+                    "Первый, второй, третий",
+                    "Пришёл, увидел, победил",
+                ],
+                correct_answer: "3"
+            },
+            {
+                question: "Dura lex, sed lex",
+                answers: [
+                    "Глупое слово выдаёт неуча",
+                    "Закон суров, но это закон",
+                    "Длинный язык — язык мертвеца",
+                ],
+                correct_answer: "2"
+            },
+            {
+                question: "Per aspera ad astra",
+                answers: [
+                    "Правдами и неправдами",
+                    "Через тернии к звездам",
+                    "Астры для аспирантки",
+                ],
+                correct_answer: "2"
+            },
+            {
+                question: "Dum spiro, spero",
+                answers: [
+                    "Дом духа, храм",
+                    "Слышишь глас, внимай",
+                    "Пока дышу, надеюсь",
+                ],
+                correct_answer: "3"
+            },
+            {
+                question: "Si vis pacem, para bellum",
+                answers: [
+                    "Пусть победит сильнейший",
+                    "Хочешь мира, готовься к войне",
+                    "Дорогу осилит идущий",
+                ],
+                correct_answer: "2"
+            },
+            {
+                question: "Feci, quod potui, faciant meliora potentes",
+                answers: [
+                    "Охота пуще неволи",
+                    "Не будешь заботиться о будущем — оросишь землю слезами",
+                    "Я сделал всё что мог. Пусть, кто может, сделает лучше",
+                ],
+                correct_answer: "3"
+            },
+        ];
+
+        localStorage.setItem('my_questionary', JSON.stringify(questionary));
+
+    }
+    </script>
+</head>
+
+<body>
+
+    <p><button onclick="sendToLocalStorage()" type="button">Click me!</button></p>
+    <p>Click the button to send the questionary to local storage.</p>
+</body>
+
+
+
+</body>
+
+</html>
